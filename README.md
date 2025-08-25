@@ -3,7 +3,7 @@
 
 ---
 
-✨ 핵심 기능
+## ✨ 핵심 기능
 
 개인화 피드: EQ 슬라이더(예: IT 60%, 경제 25%, 스포츠 15%)를 실시간 반영해 비중/정렬 조정
 
@@ -15,10 +15,11 @@ AI 콘텐츠 가공: 1줄/3줄 요약, TTS(음성), 4컷 만화 변환
 
 ---
 
-🧭 프로젝트 구조
+## 🧭 프로젝트 구조
 
 리포 루트 아래 nuspeak/ 폴더에 실제 소스가 있습니다.
 
+```text
 nuspeak/
 ├─ backend/                 # Express API 서버
 │  ├─ routes/               # /news, /ai, /auth 등
@@ -34,9 +35,11 @@ nuspeak/
 │  └─ screen-feed.jpg       # 피드 스크린샷
 └─ README.md, .gitignore, SETUP.md
 
+```
+
 ---
 
-🎨 디자인 & 브랜딩 스토리
+## 🎨 디자인 & 브랜딩 스토리
 
 브랜딩/프론트 진행 방식
 브랜드 콘셉트 수립부터 로고, 컬러 시스템, 타이포그래피, 주요 컴포넌트·화면 설계까지는 제가 중심이 되어 진행했습니다. 과정 전반에서 팀의 피드백과 아이디어를 반영해 방향을 다듬었고, 생산성 향상을 위해 Cursor 등 도구를 보조적으로 활용했습니다.
@@ -46,12 +49,12 @@ nuspeak/
 
 ---
 
-🖼️ 스크린샷
+## 🖼️ 스크린샷
 <p align="center"> <img src="docs/screen-landing.jpg" alt="랜딩 — 히어로 섹션(메인 메시지·CTA) + 가치 제안 카드" width="85%"> </p> <p align="center"><em>랜딩: “정보의 바다에서 당신만의 섬을…” 메인 메시지 + ‘지금 시작하기’ CTA</em></p> <p align="center"> <img src="docs/screen-feed.jpg" alt="추천 뉴스 피드 — 카테고리 탭, 카드형 뉴스(태그·요약·메타)" width="85%"> </p> <p align="center"><em>피드: 관심사 탭 전환, 카드형 뉴스(카테고리 태그 · 요약 · 출처 · 메타)</em></p>
 
 ---
 
-⚙️ 환경변수
+## ️ 환경변수
 backend/.env (실제 값은 여기에, 커밋 금지)
 OPENAI_API_KEY=
 GOOGLE_TTS_API_KEY=
@@ -65,7 +68,7 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
 
 ---
 
-🚀 빠른 시작
+## 🚀 빠른 시작
 # 백엔드
 cd nuspeak/backend
 npm install
@@ -78,7 +81,7 @@ npm run dev   # http://localhost:3000
 
 ---
 
-🔌 API 요약
+## 🔌 API 요약
 
 GET /news/feed?limit=10&page=1
 
@@ -92,7 +95,7 @@ POST /ai/summary · POST /ai/comic · POST /ai/tts
 
 ---
 
-🧠 아키텍처
+## 🧠 아키텍처
 flowchart LR
   U[사용자] <--> FE[Next.js 프론트엔드]
   FE <--> BE[Express 백엔드 API]
@@ -101,7 +104,7 @@ flowchart LR
 
 ---
 
-🧩 기술 스택
+## 🧩 기술 스택
 
 Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
 Backend: Node.js + Express
@@ -111,7 +114,7 @@ CI/CD(옵션): GitHub Actions, Vercel/Render
 
 ---
 
-🗺️ 로드맵
+## 🗺️ 로드맵
 
  EQ 디바운스(0.5s) & 실시간 미리보기
 
@@ -125,7 +128,7 @@ CI/CD(옵션): GitHub Actions, Vercel/Render
 
 ---
 
-📚 문서
+## 📚 문서
 
 docs/Nu_Speak_기획서_V2.docx, docs/사용자 시나리오.docx,
 docs/와이어프레임 구성 가이드.docx, docs/API 명세서.docx,
@@ -133,19 +136,19 @@ docs/발표자료_nuspeak_최종.pptx
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 PR 환영합니다. 버그/개선 제안은 Issues로!
 
 ---
 
-📄 라이선스
+## 📄 라이선스
 
 MIT
 
 ---
 
-🙌 크레딧
+## 🙌 크레딧
 
 Product · Design · Frontend: jini-c
 
