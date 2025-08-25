@@ -118,34 +118,31 @@ flowchart LR
 ---
 
 ## 🧩 기술 스택
--Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
--Backend: Node.js + Express
--AI/ML: OpenAI API(요약/대화), TTS API
--DB/Caching(설계): PostgreSQL, Redis
--CI/CD(옵션): GitHub Actions, Vercel/Render
+
+- Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
+- Backend: Node.js + Express
+- AI/ML: OpenAI API(요약/대화), TTS API
+- DB/Caching(설계): PostgreSQL, Redis
+- CI/CD(옵션): GitHub Actions, Vercel/Render
 
 ---
 
-## 🗺️ 로드맵
+# 로드맵
 
- EQ 디바운스(0.5s) & 실시간 미리보기
+- [ ] EQ 디바운스(0.5s) & 실시간 미리보기
+- [ ] Redis 캐시로 피드 응답 속도 개선
+- [ ] 북마크/키워드 알림 API
+- [ ] 4컷 만화 프롬프트 템플릿 고도화
+- [ ] 모바일 앱 PoC(여유 시)
 
- Redis 캐시로 피드 응답 속도 개선
+## 문서
 
- 북마크/키워드 알림 API
-
- 4컷 만화 프롬프트 템플릿 고도화
-
- 모바일 앱 PoC(여유 시)
-
----
-
-## 📚 문서
-
-docs/Nu_Speak_기획서_V2.docx, docs/사용자 시나리오.docx,
-docs/와이어프레임 구성 가이드.docx, docs/API 명세서.docx,
-docs/발표자료_nuspeak_최종.pptx, docs/출력물 패키지.docx
-
+- [Nu_Speak_기획서_V2.docx](docs/Nu_Speak_기획서_V2.docx)
+- [사용자 시나리오.docx](docs/사용자%20시나리오.docx)
+- [와이어프레임 구성 가이드.docx](docs/와이어프레임%20구성%20가이드.docx)
+- [API 명세서.docx](docs/API%20명세서.docx)
+- [발표자료_nuspeak_최종.pptx](docs/발표자료_nuspeak_최종.pptx)
+- [출력물 패키지.docx](docs/출력물%20패키지.docx)
 ---
 
 ## 🤝 Contributing
