@@ -54,8 +54,10 @@ nuspeak/
 
 ---
 
-## ️ 환경변수
-backend/.env (실제 값은 여기에, 커밋 금지)
+## ⚙️ 환경변수
+
+### `backend/.env`  _(실제 값은 여기에, 커밋 금지)_
+```bash
 OPENAI_API_KEY=
 GOOGLE_TTS_API_KEY=
 PORT=4000
@@ -65,52 +67,58 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
 
 
 주의: NEXT_PUBLIC_ 접두사는 브라우저에 공개됩니다. 비밀키는 넣지 마세요.
+```
 
 ---
 
+
 ## 🚀 빠른 시작
+
+```bash
 # 백엔드
 cd nuspeak/backend
 npm install
 npm run dev   # http://localhost:4000
-
+```
+```bash
 # 프론트엔드
 cd ../frontend
 npm install
 npm run dev   # http://localhost:3000
-
+```
 ---
 
 ## 🔌 API 요약
 
+```http
 GET /news/feed?limit=10&page=1
-
 PUT /users/eq-settings
-
 POST /chat/message
-
-POST /ai/summary · POST /ai/comic · POST /ai/tts
-
+POST /ai/summary 
+POST /ai/comic
+POST /ai/tts
+```
 상세는 docs/API 명세서.docx 참고.
 
 ---
 
 ## 🧠 아키텍처
+
+```mermaid
 flowchart LR
   U[사용자] <--> FE[Next.js 프론트엔드]
   FE <--> BE[Express 백엔드 API]
   BE -->|요약/만화/TTS| AI[(OpenAI 등)]
   BE -->|뉴스 수집/캐시| News[(수집기/캐시)]
-
+```
 ---
 
 ## 🧩 기술 스택
-
-Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
-Backend: Node.js + Express
-AI/ML: OpenAI API(요약/대화), TTS API
-DB/Caching(설계): PostgreSQL, Redis
-CI/CD(옵션): GitHub Actions, Vercel/Render
+-Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
+-Backend: Node.js + Express
+-AI/ML: OpenAI API(요약/대화), TTS API
+-DB/Caching(설계): PostgreSQL, Redis
+-CI/CD(옵션): GitHub Actions, Vercel/Render
 
 ---
 
@@ -132,7 +140,7 @@ CI/CD(옵션): GitHub Actions, Vercel/Render
 
 docs/Nu_Speak_기획서_V2.docx, docs/사용자 시나리오.docx,
 docs/와이어프레임 구성 가이드.docx, docs/API 명세서.docx,
-docs/발표자료_nuspeak_최종.pptx
+docs/발표자료_nuspeak_최종.pptx, docs/출력물 패키지.docx
 
 ---
 
