@@ -65,6 +65,7 @@ nuspeak/
 │  ├─ screen-landing.jpg    # 랜딩 스크린샷
 │  └─ screen-feed.jpg       # 피드 스크린샷
 └─ README.md, .gitignore, SETUP.md
+
 🎨 디자인 & 브랜딩 스토리
 브랜드 콘셉트: 신뢰(딥블루) + 혁신(민트), 말풍선(뉴스) + 파형/보이스(음성) 모티프.
 
@@ -73,8 +74,19 @@ nuspeak/
 
 디자인 시스템: 4/8 spacing, 2xl 라운드, 소프트 섀도, 카드형 뉴스·EQ 슬라이더·태그/배지·토스트/스켈레톤 등.
 
-🖼️ 스크린샷
-<p align="center"> <img src="docs/screen-landing.jpg" alt="랜딩 — 히어로 섹션(메인 메시지·CTA) + 가치 제안 카드" width="85%"> </p> <p align="center"><em>랜딩: “정보의 바다에서 당신만의 섬을…” 메인 메시지 + ‘지금 시작하기’ CTA</em></p> <p align="center"> <img src="docs/screen-feed.jpg" alt="추천 뉴스 피드 — 카테고리 탭, 카드형 뉴스(태그·요약·메타)" width="85%"> </p> <p align="center"><em>피드: 관심사 탭 전환, 카드형 뉴스(카테고리 태그 · 요약 · 출처 · 메타)</em></p>
+## 🖼️ 스크린샷
+
+<p align="center">
+  <img src="docs/screen-landing.jpg" alt="랜딩 — 히어로 섹션(메인 메시지·CTA) + 가치 제안 카드" width="85%">
+</p>
+<p align="center"><em>랜딩: “정보의 바다에서 당신만의 섬을…” 메인 메시지 + ‘지금 시작하기’ CTA</em></p>
+
+<p align="center">
+  <img src="docs/screen-feed.jpg" alt="추천 뉴스 피드 — 카테고리 탭, 카드형 뉴스(태그·요약·메타)" width="85%">
+</p>
+<p align="center"><em>피드: 관심사 탭 전환, 카드형 뉴스(카테고리 태그 · 요약 · 출처 · 메타)</em></p>
+
+
 ⚙️ 환경변수
 backend/.env (실제 값은 여기에, 커밋 금지)
 bash
@@ -99,6 +111,7 @@ cd nuspeak/backend && npm i && npm run dev   # http://localhost:4000
 
 # 프론트엔드
 cd nuspeak/frontend && npm i && npm run dev  # http://localhost:3000
+
 🔌 API 요약
 GET /news/feed?limit=10&page=1
 
@@ -119,6 +132,7 @@ flowchart LR
   FE <--> BE[Express 백엔드 API]
   BE -->|요약/만화/TTS| AI[(OpenAI 등)]
   BE -->|뉴스 수집/캐시| News[(수집기/캐시)]
+
 🧩 기술 스택
 Frontend: Next.js(SSR/SSG), TypeScript, CSS Modules
 Backend: Node.js + Express
